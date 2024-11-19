@@ -51,3 +51,14 @@ body {
 }
 
 
+@media screen and (max-width: 768px) {
+    .column {
+        width: calc((100% - 10px)/ 2);
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .column {
+        width: 100%;
+    }
+}
