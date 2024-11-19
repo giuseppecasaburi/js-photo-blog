@@ -1,0 +1,43 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+/* COMMON */
+body {
+    background-image: url(../img/cork.png);
+    font-family: Edu TAS Beginner;
+}
+
+.row {
+    position: relative;
+}
+
+
+/* LAYOUT */
+#header {
+    background-image: url(../img/wall.png);
+    height: 100px;
+    text-align: center;
+    align-content: center;
+}
+
+.card {
+    padding: 5px;
+    width: 250px;
+}
+
+#img-pin {
+    position: absolute;
+    left: 45%;
+    top: 0;
+    width: 30px;
+}
+
+
