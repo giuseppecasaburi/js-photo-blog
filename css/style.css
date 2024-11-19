@@ -6,7 +6,7 @@
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 /* COMMON */
@@ -15,8 +15,17 @@ body {
     font-family: Edu TAS Beginner;
 }
 
-.row {
-    position: relative;
+.riga {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;  
+    margin: 50px 0;
+}
+
+
+
+.column {
+    width: calc((100% - 20px)/ 3);
 }
 
 
@@ -29,8 +38,9 @@ body {
 }
 
 .card {
-    padding: 5px;
-    width: 250px;
+    max-width: 300px;
+    min-height: 350px;
+    margin: 0 auto; 
 }
 
 #img-pin {
