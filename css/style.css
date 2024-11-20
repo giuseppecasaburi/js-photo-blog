@@ -77,7 +77,11 @@ body {
 
 #close {
     display: block;
-    text-align: right;    
+    text-align: right;
+    cursor: pointer;
+    border: none;
+    background-color: transparent; 
+    font-size: 30px;
 }
 
 
