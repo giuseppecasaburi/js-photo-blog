@@ -1,5 +1,11 @@
 const rigaElm = document.querySelector(".riga");
+const overElm = document.getElementById("overlay");
+const closeElm = document.getElementById("close");
 
+function remove () {
+    overElm.classList.remove("flex");
+    overElm.classList.add("hidden");
+};
 
 function photoGen () {
     let result = "";
@@ -18,7 +24,21 @@ function photoGen () {
                 `
             });
         rigaElm.innerHTML = result;
+        
+        const cardElm = document.querySelectorAll(".card");
+        cardElm.forEach((card, index) => {
+            card.addEventListener("click", function () {
+                overElm.classList.remove("hidden");
+                overElm.classList.add("flex");
+            })
+        })
+
+        closeElm.addEventListener("click", remove)
+        overElm.addEventListener("click", remove)
 })   
 }
 
 photoGen ();
+
+
+
