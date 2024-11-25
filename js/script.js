@@ -7,7 +7,6 @@ const contOverlayElm = document.getElementById("cont-overlay");
 // FUNCTION
 /**
  * RIMUOVE L'OVERLAY DAL VIEWPORT
- * @returns {any}
  */
 function remove () {
     overElm.classList.remove("flex");
@@ -17,7 +16,6 @@ function remove () {
 
 /**
  * PRENDE ARRAY DI CARD E AGGIUNGE EVENTO CLICK CON OVERLAY 
- * @returns {any}
  */
 function overlay () {
     const cardElm = document.querySelectorAll(".card");
@@ -36,7 +34,6 @@ function overlay () {
 
 /**
  * PRENDE LE IMMAGINI DALL'API E AGGIUNGE A DOM, RICHIAMA OVERLAY E REMOVE 
- * @returns {any}
  */
 function photoGen () {
     let result = "";
